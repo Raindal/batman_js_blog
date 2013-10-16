@@ -1,0 +1,22 @@
+<h1 data-bind="post.title"></h1>
+
+<p data-bind="post.content"></p>
+
+<a data-route="routes.posts[post].edit">Edit</a> |
+<a data-event-click="destroy">Destroy</a>
+
+<ul>
+  <li data-foreach-comment="post.comments">
+    <p data-bind="comment.content"></p>
+    <a data-event-click="destroyComment">Destroy</a>
+  </li>
+</ul>
+
+<form data-formfor-comment="comment" data-event-submit="createComment">
+  <div>
+    <label>Content:</label>
+    <textarea data-bind="comment.content"></textarea>
+  </div>
+
+  <input name="commit" type="submit" value="Submit">
+</form>

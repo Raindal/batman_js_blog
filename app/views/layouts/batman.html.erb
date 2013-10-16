@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batman Js Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "batman_js_blog" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<a data-route="routes.posts">Posts</a> |
+<a data-route="routes.posts.new">New Post</a>
+
+<div data-yield="main"></div>
+
+<script type="text/javascript">
+  BatmanJsBlog.run();
+</script>
+
+</body>
+</html>

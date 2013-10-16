@@ -1,0 +1,9 @@
+<div data-showif="post.errors.length">
+  <p>
+    <span data-bind="'error' | pluralize post.errors.length"></span>
+    prevented this post from being created:
+  </p>
+  <ul>
+    <li data-bind="error.message" data-foreach-error="post.errors"></li>
+  </ul>
+</div>

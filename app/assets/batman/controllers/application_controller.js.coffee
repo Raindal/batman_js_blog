@@ -1,0 +1,1 @@
+class BatmanJsBlog.ApplicationController extends Batman.Controller

@@ -1,0 +1,8 @@
+<span data-bind="'post' | pluralize posts.length"></span>
+
+<ul>
+  <li data-foreach-post="posts">
+    <a data-bind="post.title" data-route="post"></a> |
+    <a data-event-click="destroy">Destroy</a>
+  </li>
+</ul>
